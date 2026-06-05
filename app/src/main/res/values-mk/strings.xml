@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">TaskManager</string>
+    <string name="default_notification_channel_id">task_manager_default</string>
+
+    <!-- Auth -->
+    <string name="welcome_back">Добредојдовте!</string>
+    <string name="sign_in_subtitle">Пријавете се за да управувате со задачите</string>
+    <string name="email">Е-пошта</string>
+    <string name="password">Лозинка</string>
+    <string name="confirm_password">Потврди лозинка</string>
+    <string name="full_name">Целосно ime</string>
+    <string name="sign_in">Пријави се</string>
+    <string name="sign_in_with_google">Продолжи со Google</string>
+    <string name="or">— или —</string>
+    <string name="no_account_register">Немате сметка? Регистрирајте се</string>
+    <string name="have_account_login">Имате сметка? Пријавете се</string>
+    <string name="create_account">Создај сметка</string>
+    <string name="forgot_password">Заборавена лозинка?</string>
+    <string name="google_sign_in_failed">Google пријавувањето не успеа. Обидете се повторно.</string>
+    <string name="sign_out">Одјави се</string>
+
+    <!-- Validation errors -->
+    <string name="error_email_required">Е-поштата е задолжителна</string>
+    <string name="error_password_required">Лозинката е задолжителна</string>
+    <string name="error_password_too_short">Лозинката мора да содржи барем 6 знаци</string>
+    <string name="error_passwords_dont_match">Лозинките не се совпаѓаат</string>
+    <string name="error_name_required">Името е задолжително</string>
+    <string name="error_title_required">Насловот е задолжителен</string>
+
+    <!-- Tasks -->
+    <string name="tasks">Задачи</string>
+    <string name="add_task">Додај задача</string>
+    <string name="task_title">Наслов на задача</string>
+    <string name="task_description">Опис (незадолжително)</string>
+    <string name="task_detail">Детали за задача</string>
+    <string name="no_tasks">Сè уште нема задачи. Допрете + за да додадете!</string>
+    <string name="greeting">Здраво, %1$s!</string>
+    <string name="greeting_placeholder">Здраво!</string>
+    <string name="task_count_placeholder">Се вчитуваат задачи…</string>
+    <string name="default_user_name">Корисник</string>
+    <string name="delete_task">Избриши задача</string>
+    <string name="mark_completed">Означи како завршено</string>
+    <string name="synced">✓ Синхронизирано</string>
+    <string name="not_synced">⚠ Не е синхронизирано</string>
+    <string name="created_at">Создадено: %1$s</string>
+    <string name="updated_at">Ажурирано: %1$s</string>
+
+    <!-- Tabs -->
+    <string name="tab_all">Сите</string>
+    <string name="tab_active">Активни</string>
+    <string name="tab_completed">Завршени</string>
+
+    <!-- Priority -->
+    <string name="priority">Приоритет</string>
+    <string name="priority_low">Низок</string>
+    <string name="priority_medium">Среден</string>
+    <string name="priority_high">Висок</string>
+
+    <!-- Due Date -->
+    <string name="due_date">Рок</string>
+    <string name="pick_date">Избери датум</string>
+    <string name="change_date">Промени датум</string>
+    <string name="no_due_date">Без рок</string>
+    <string name="clear_date">Исчисти датум</string>
+
+    <!-- Actions -->
+    <string name="save">Зачувај</string>
+    <string name="cancel">Откажи</string>
+    <string name="edit">Уреди</string>
+    <string name="delete">Избриши</string>
+    <string name="sync">Синхронизирај</string>
+
+    <!-- Settings -->
+    <string name="settings">Поставки</string>
+    <string name="account">Сметка</string>
+    <string name="preferences">Претпочитања</string>
+    <string name="language">Јазик (Македонски)</string>
+    <string name="language_english">English</string>
+    <string name="language_macedonian">Македонски</string>
+    <string name="dark_mode">Темен режим</string>
+    <string name="notifications">Push известувања</string>
+
+    <!-- Notification channels -->
+    <string name="channel_tasks_name">Ажурирања на задачи</string>
+    <string name="channel_tasks_desc">Известувања за промени на задачи</string>
+    <string name="channel_reminders_name">Потсетници за задачи</string>
+    <string name="channel_reminders_desc">Потсетници за претстојни задачи</string>
+
+    <!-- Firebase -->
+    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID_HERE</string>
+</resources>

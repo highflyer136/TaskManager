@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 seed colors -->
+    <color name="colorPrimary">#1565C0</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorPrimaryContainer">#D3E4FF</color>
+    <color name="colorOnPrimaryContainer">#001C3A</color>
+    <color name="colorSecondary">#545F71</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorSecondaryContainer">#D8E3F8</color>
+    <color name="colorTertiary">#6D5676</color>
+    <color name="colorError">#BA1A1A</color>
+    <color name="colorOnSurfaceVariant">#43474E</color>
+
+    <!-- Priority colors -->
+    <color name="priorityHigh">#C62828</color>
+    <color name="priorityMedium">#F57F17</color>
+    <color name="priorityLow">#2E7D32</color>
+</resources>

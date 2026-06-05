@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+    <!-- Circle background -->
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M40,0 C62.09,0 80,17.91 80,40 C80,62.09 62.09,80 40,80 C17.91,80 0,62.09 0,40 C0,17.91 17.91,0 40,0 Z"/>
+    <!-- Checkmark / task list icon in white -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,28 L32,28 L32,32 L20,32 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,38 L60,38 L60,42 L20,42 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,48 L52,48 L52,52 L20,52 Z"/>
+    <!-- Checkmark on first row -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M36,22 L39,25 L46,18 L48,20 L39,29 L34,24 Z"/>
+</vector>

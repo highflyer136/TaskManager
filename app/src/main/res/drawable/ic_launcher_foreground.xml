@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer safe-zone circle (centered in 108x108, radius 36 = safe zone) -->
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M54,18 C73.88,18 90,34.12 90,54 C90,73.88 73.88,90 54,90 C34.12,90 18,73.88 18,54 C18,34.12 34.12,18 54,18 Z"/>
+
+    <!-- Checklist lines (white) -->
+    <!-- Row 1: checkbox checked -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,46 L62,46 L62,49 L38,49 Z"/>
+    <!-- Checkmark on row 1 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,40 L37,43 L44,36 L46,38 L37,47 L32,42 Z"/>
+
+    <!-- Row 2: full line -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,54 L72,54 L72,57 L32,57 Z"/>
+
+    <!-- Row 3: shorter line -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,62 L64,62 L64,65 L32,65 Z"/>
+
+</vector>
