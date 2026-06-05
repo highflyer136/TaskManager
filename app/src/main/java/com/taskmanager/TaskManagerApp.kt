@@ -6,7 +6,7 @@ import android.app.NotificationManager
 import android.os.Build
 import android.util.Log
 import dagger.hilt.android.HiltAndroidApp
-
+//a comment bcs i need more than 1 commit for some reason
 @HiltAndroidApp
 class TaskManagerApp : Application() {
 
