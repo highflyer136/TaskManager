@@ -48,16 +48,21 @@ class SettingsFragment : Fragment() {
 
         // Language switch
         binding.switchLanguage.apply {
-            val currentLocale = Locale.getDefault().language
-            isChecked = currentLocale == "mk"
+            val prefs = requireContext().getSharedPreferences("settings", 0)
+            val savedLang = prefs.getString("language", "en")
+            isChecked = savedLang == "mk"
             text = if (isChecked) getString(R.string.language_macedonian) else getString(R.string.language_english)
 
             setOnCheckedChangeListener { _, checked ->
-                val locale = if (checked) Locale("mk") else Locale("en")
+                val langCode = if (checked) "mk" else "en"
+                prefs.edit().putString("language", langCode).apply()
+
+                val locale = Locale(langCode)
                 Locale.setDefault(locale)
                 val config = resources.configuration
                 config.setLocale(locale)
-                requireActivity().createConfigurationContext(config)
+                resources.updateConfiguration(config, resources.displayMetrics)
+
                 requireActivity().recreate()
             }
         }

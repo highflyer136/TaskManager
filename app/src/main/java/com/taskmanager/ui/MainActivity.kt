@@ -1,5 +1,6 @@
 package com.taskmanager.ui
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -17,6 +18,7 @@ import com.taskmanager.ui.auth.AuthActivity
 import com.taskmanager.ui.tasks.TasksViewModel
 import com.taskmanager.utils.isTablet
 import dagger.hilt.android.AndroidEntryPoint
+import java.util.Locale
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
@@ -41,7 +43,16 @@ class MainActivity : AppCompatActivity() {
 
         setupNavigation()
     }
-
+    override fun attachBaseContext(base: Context) {
+        val prefs = base.getSharedPreferences("settings", 0)
+        val lang = prefs.getString("language", "en") ?: "en"
+        val locale = Locale(lang)
+        Locale.setDefault(locale)
+        val config = base.resources.configuration
+        config.setLocale(locale)
+        val context = base.createConfigurationContext(config)
+        super.attachBaseContext(context)
+    }
     private fun setupNavigation() {
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.nav_host_fragment) as? NavHostFragment ?: return

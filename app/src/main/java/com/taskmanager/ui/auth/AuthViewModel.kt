@@ -87,6 +87,21 @@ class AuthViewModel @Inject constructor(
             }
         }
     }
+    fun signInAnonymously() {
+        _authState.value = AuthState.Loading
+        viewModelScope.launch {
+            try {
+                val result = firebaseAuth.signInAnonymously().await()
+                result.user?.let {
+                    _authState.value = AuthState.Success(it)
+                } ?: run {
+                    _authState.value = AuthState.Error("Anonymous sign in failed")
+                }
+            } catch (e: Exception) {
+                _authState.value = AuthState.Error(e.localizedMessage ?: "Unknown error")
+            }
+        }
+    }
 
     fun sendPasswordReset(email: String) {
         viewModelScope.launch {

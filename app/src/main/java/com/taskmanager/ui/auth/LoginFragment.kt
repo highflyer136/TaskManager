@@ -45,7 +45,9 @@ class LoginFragment : Fragment() {
         binding.btnGoogleSignIn.setOnClickListener {
             (activity as? AuthActivity)?.launchGoogleSignIn()
         }
-
+        binding.btnContinueAsGuest.setOnClickListener {
+            viewModel.signInAnonymously()
+        }
         binding.tvRegister.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
         }
@@ -78,6 +80,7 @@ class LoginFragment : Fragment() {
             binding.progressBar.isVisible = state is AuthState.Loading
             binding.btnLogin.isEnabled = state !is AuthState.Loading
             binding.btnGoogleSignIn.isEnabled = state !is AuthState.Loading
+            binding.btnContinueAsGuest.isEnabled = state !is AuthState.Loading
         }
     }
 

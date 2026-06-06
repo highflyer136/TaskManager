@@ -78,7 +78,7 @@
     <string name="settings">Settings</string>
     <string name="account">Account</string>
     <string name="preferences">Preferences</string>
-    <string name="language">Language (Macedonian)</string>
+    <string name="language">Language (English)</string>
     <string name="language_english">English</string>
     <string name="language_macedonian">Македонски</string>
     <string name="dark_mode">Dark Mode</string>
@@ -92,4 +92,5 @@
 
     <!-- Firebase -->
     <string name="default_web_client_id">YOUR_WEB_CLIENT_ID_HERE</string>
+    <string name="continue_as_guest" translatable="false">Continue as Guest</string>
 </resources>
